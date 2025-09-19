@@ -3,16 +3,25 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.visited-container{
-    border: 2px solid salmon;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(248, 242, 242);
+.visited-container {
+  border: 2px solid salmon;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(248, 242, 242);
 }
 .visited-container img {
   width: 120px;
   height: 70px;
   margin-right: 10px;
-  
+}
+@media (max-width: 900px) {
+  .countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .countries {
+    grid-template-columns: 1fr;
+  }
 }
